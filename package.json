@@ -12,5 +12,8 @@
     "json"
   ],
   "author": "Carter Thaxton",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "get-stdin": "^6.0.0"
+  }
 }

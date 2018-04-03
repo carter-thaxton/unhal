@@ -2,6 +2,7 @@
 function unhal(data) {
   if (isArray(data)) {
     return data.map(unhal)
+
   } else if (isObject(data)) {
     var d = Object.assign({}, data)
     delete d._links
@@ -26,6 +27,5 @@ function isObject(a) {
 function isArray(a) {
   return (!!a) && (a.constructor === Array)
 }
-
 
 module.exports = unhal
